@@ -1,0 +1,26 @@
+.bread-crumbs {
+  margin-bottom: 34px;
+}
+.bread-crumbs__item {
+  @include inlineblock();
+  &:before {
+    content : " > ";
+    color : $black !important;
+  }
+  &:first-child:before {
+    content : '';
+
+  }
+}
+.bread-crumbs__link {
+  text-decoration: none;
+  @include open-sans(regular);
+  font-size: 14px;
+  color : $black;
+
+
+  &:hover {
+    color : $orange;
+    text-decoration: underline;
+  }
+}

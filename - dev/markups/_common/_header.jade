@@ -1,0 +1,31 @@
+header.header
+    .header-top
+        .container
+            .header-top__left
+                    ul.social-menu
+                        - var socialmenu = {'fb' : 'https://facebook.com', 'vk' : 'https://vk.com', 'tw' : 'https://twitter.com'};
+                        each value, key in socialmenu
+                            li(class='social-menu__item social-menu__item_' + key)
+                                a(href= value).social-menu__link
+                                    .social__icon
+                                .social-menu__item_text= value
+            .header-top__right
+                .adress
+                    a(href='#').adress__link ул. Маяковского 6, оф.17
+                .phone
+                    a(href='tel:+79121231213').phone__link +7 (912) 123-12-13
+    .header-bottom
+        .container
+            .logo
+                img(src='img/cooltech.png' alt='logo').logo__img
+                a(href='#').logo__link
+            .search
+                form
+                    input(type='text' name='search' placeholder='Что будем искать').search__input
+                    input(type='submit' value='Найти').search__button
+            .header-links
+                ul.header-menu
+                    - var headermenu = ['Карта проезда', 'История заказов', 'Корзина'];
+                    each item in headermenu
+                        li.header-menu__item
+                            a(href='#').header-menu__link= item

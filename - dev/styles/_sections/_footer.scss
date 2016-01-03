@@ -1,0 +1,72 @@
+
+.footer {
+  background: url("../img/footer.png") center center;
+  position : relative;
+}
+
+.footer__left {
+  width : 45%;
+  float : left;
+
+}
+.footer .logo {
+  margin-top: 70px;
+}
+.footer__right {
+  width : 55%;
+  float : left;
+  text-align: right;
+}
+.footer .social-menu {
+  margin-top: 35px;
+  margin-bottom: 33px;
+}
+.social-menu__item {
+  @include inlineblock(meddle);
+
+}
+
+.footer .social-menu__link {
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+}
+.social-icon {
+  @include absolute-center;
+}
+$socials: fb, vk, tw;
+$socials-map: sprite-map('icon/dark-socials/*.png', $spacing:70px);
+
+@each $social in $socials {
+  .social-menu__item_#{$social} {
+    .social-icon {
+      @include get-sprite($socials-map, $social);
+    }
+      .social-icon:hover {
+        @include get-sprite($socials-map, $social + '_hover');
+      }
+    }
+};
+.footer .main-menu__item {
+  padding-bottom: 22px;
+}
+.footer .main-menu__link {
+  display: inline;
+  color : #fff;
+  padding: 5px;
+  text-decoration: underline;
+  &:hover {
+    background-color: inherit;
+  }
+}
+.footer-top {
+  border-bottom: 1px solid #494949;
+}
+
+.footer-bottom__text {
+  padding: 3px 0;
+  text-align: center;
+  @include open-sans(regular);
+  color : #fff;
+  font-size: 12px;
+}

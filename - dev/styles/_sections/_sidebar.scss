@@ -1,0 +1,198 @@
+.sidebar-wrapper {
+  width : 330px;
+  float : left;
+  position: relative;
+}
+.block {
+  background-color: #fbfbfb;
+  @include border-radius(5px);
+  border: 1px solid #dee1e4;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.sidebar-wrapper .block {
+  margin-bottom: 38px;
+}
+.small-menu__item {
+  border-top: 1px solid #dee1e4;
+    &:first-child {
+      border : none;
+    }
+    &.active {
+      background-color: $blue;
+      color : #5d656c;
+    }
+}
+.small-menu__link {
+  display: block;
+  padding: 12px 30px;
+  padding-right: 0;
+  text-decoration: none;
+  @include open-sans(regular);
+  font-size: 14px;
+  color : #5d656c;
+  &:hover {
+    background-color: $blue;
+    color : $black;
+  }
+}
+.side-bar__link {
+  @include open-sans(semibold);
+  font-size: 14px;
+  &:hover {
+    &:after {
+      content: '';
+      @include inlineblock();
+      height: 11px;
+      width: 18px;
+      float: right;
+      text-align: right;
+      margin-right: 8px;
+      margin-top: 5px;
+      @include get-sprite($misc-sprite, down);
+    }
+  }
+}
+.side-bar__radio_input {
+  position : absolute;
+  left : -9999px;
+}
+.side-bar__radio_text {
+  position: relative;
+  padding-left : 58px;
+  line-height: 20px;
+  @include open-sans(regular);
+  font-size: 14px;
+  color : $black;
+  margin-bottom: 18px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      left : 29px;
+      box-sizing: border-box;
+      @include border-radius(50%);
+      border: 3px solid #dee1e4;
+  }
+}
+.side-bar__radio_text:after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: 34px;
+  top: 5px;
+  box-sizing: border-box;
+  @include border-radius(50%);
+  background-color: $orange;
+}
+.side-bar__radio {
+  display: block;
+}
+
+.side-bar__radio_input:checked + .side-bar__radio_text:after {
+  display: block;
+}
+.side-bar__radio_input:checked + .side-bar__radio_text:before {
+  border-color: $orange;
+}
+.side-bar__checkbox_input {
+  position : absolute;
+  left : -9999px;
+}
+.side-bar__checkbox_text {
+  position: relative;
+  padding-left: 58px;
+  line-height: 20px;
+  @include open-sans(regular);
+  font-size: 14px;
+  color: $black;
+  margin-bottom: 18px;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 29px;
+    box-sizing: border-box;
+    @include border-radius(3px);
+    background-color: #dee1e4;
+  }
+  &:hover {
+    &:before {
+      display: block;
+      @include get-sprite($misc-sprite, ok, no-repeat, true, true, 3px, +5px);
+      width: 19px;
+      height: 19px;
+      background-color: #dee1e4;
+
+    }
+  }
+};
+.side-bar__checkbox_input:checked + .side-bar__checkbox_text:before {
+  background-color: $orange;
+}
+.side-bar__checkbox_input:checked + .side-bar__checkbox_text:hover:before {
+  display: block;
+  @include get-sprite($misc-sprite, ok_hover, no-repeat, true, true, 3px, +5px);
+  width: 19px;
+  height: 19px;
+  background-color: $orange;
+}
+.brends-reset {
+  color: #5db2fc;
+  display: block;
+  @include open-sans(regular);
+  font-size: 14px;
+  margin-left: 29px;
+  margin-bottom: 18px;
+}
+.sidebar-color {
+  margin-left: 9px;
+  margin-right: 50px;
+
+}
+.sidebar-color__item {
+  display: inline-block;
+  height: 37px;
+  width: 37px;
+  border: 3px solid transparent;
+  margin-left: 14px;
+  margin-bottom: 14px;
+}
+.sidebar-color__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dee1e4;
+  &:hover {
+    border : 3px solid #ff6600;
+  }
+}
+.sidebar-price__wrap {
+  @include clearfix;
+  margin-bottom: 18px;
+}
+.sidebar-price__item {
+  width:50%;
+  float : left;
+}
+.sidebar-price__item-from, .sidebar-price__item-to {
+  @extend .search__input;
+  width : 80px;
+  height: 26px;
+}
+.sidebar-price__item-text {
+  display : inline-block;
+  @include open-sans(regular);
+  font-size: 14px;
+  color : $black;
+  margin-left: 29px;
+}
+.sidebar-price__slider {
+  margin : 0 30px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,10 @@
+.main-title {
+  margin-bottom: 34px;
+  @include open-sans(bold);
+  font-size: 20px;
+  color: $black;
+}
+.maincontent-wrapper {
+  float : right;
+  width : 740px;
+}

@@ -1,0 +1,31 @@
+.select2-container {
+  width: 160px !important;
+  * {
+    outline: none !important;
+  }
+  .select2-selection__arrow {
+    b {
+      @include get-sprite($misc-sprite, smalldown);
+      height: 9px !important;
+      width: 13px !important;
+      border: 0 none !important;
+      margin: auto !important;
+      top: 0 !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      right: 0 !important;
+    }
+  }
+  .select2-container--open {
+    .select2-selection__arrow {
+      b {
+        @include get-sprite($misc-sprite, smallup)
+      }
+    }
+  }
+  .select2-selection__rendered {
+    font-size: 12px;
+    @include open-sans(light);
+    color : #7f7f7f;
+  }
+}

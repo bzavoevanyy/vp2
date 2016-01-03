@@ -1,0 +1,23 @@
+.ui-slider-horizontal {
+  height: 3px;
+  background: #dee1e4;
+  @include border-radius(0);
+  border: 0 none;
+
+  * {
+    outline: none !important;
+  }
+  .ui-slider-handle {
+
+    @include get-sprite($misc-sprite, handle);
+    width: 10px;
+    height: 16px;
+    border: none;
+    top : -1px;
+    margin-left: -5px;
+    cursor: pointer;
+  }
+  .ui-slider-range {
+    background-color: $orange;
+  }
+}

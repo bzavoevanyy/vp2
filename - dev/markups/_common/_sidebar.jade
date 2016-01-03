@@ -1,0 +1,51 @@
+.sidebar-wrapper
+    .block
+        ul.small-menu
+            - var $smallmenu = ['Флагманы', 'Бюджетная линейка'];
+            each item in $smallmenu
+                li(class='small-menu__item' + ((item == 'Бюджетная линейка') ? (' active') : ''))
+                    a(href='#').small-menu__link= item
+    .block
+        ul.side-bar
+            - var $sidebar = ['Наличие в магазинах', 'Бренды', 'Цена', 'Цвет', 'Операционные системы'];
+            each item in $sidebar
+                li.small-menu__item.side-bar__item
+                    a(href='#').small-menu__link.side-bar__link= item
+                    if (item == 'Наличие в магазинах')
+                        label.side-bar__radio
+                            input(type='radio' name='shop' checked = 'checked').side-bar__radio_input
+                            .side-bar__radio_text Во всех магазинах
+                        label.side-bar__radio
+                            input(type='radio' name='shop').side-bar__radio_input
+                            .side-bar__radio_text В ближайшем ко мне магазине
+                    if (item == 'Бренды')
+                        - var $brends = ['Lenovo', 'Sumsung','Apple','Asus','Motorola']
+                        each item in $brends
+                            label.side-bar__checkbox
+                                input(type='checkbox' name= item).side-bar__checkbox_input
+                                .side-bar__checkbox_text= item
+                        a(href='#').brends-reset Сбросить фильтры
+                    if (item == 'Операционные системы')
+                        - var $brends = ['Android', 'iOS','Windows mobile','Symbian','Custom']
+                        each item in $brends
+                            label.side-bar__checkbox
+                                input(type='checkbox' name= item).side-bar__checkbox_input
+                                .side-bar__checkbox_text= item
+                        a(href='#').brends-reset Сбросить фильтры
+                    if (item == 'Цвет')
+                        - var $color = ['#ffffff', '#cccccc', '#000000', '#0a3153', '#ff1800', '#fff343', '#fb914a', '#92c37c', '#40a6ff', '#9870ad', '#dc78ad', '#7f401d'];
+                            ul.sidebar-color
+                                each item in $color
+                                    li.sidebar-color__item
+                                        a(href='#' style="background-color : #{item}").sidebar-color__link
+                    if (item == 'Цена')
+                        .sidebar-price
+                            .sidebar-price__wrap
+                                .sidebar-price__item
+                                    .sidebar-price__item-text от
+                                    input.sidebar-price__item-from
+                                .sidebar-price__item
+                                    .sidebar-price__item-text до
+                                    input.sidebar-price__item-to
+                            div(class='sidebar-price__slider' data-min='0' data-max='50000')
+

@@ -1,0 +1,55 @@
+.helper {
+  margin-bottom: 20px;
+}
+.sort {
+  background-color: #e4ebee;
+  @include clearfix();
+}
+.sort-left {
+  float : left;
+  width: 50%;
+}
+.sort-right {
+  float : right;
+  width : 50%;
+  text-align: right;
+  position: relative;
+}
+.sort__title {
+  @include inlineblock(middle);
+  @include open-sans(regular);
+  font-size: 14px;
+  color : #5d656c;
+  padding: 15px 20px;
+  padding-right: 8px;
+}
+.sort-view {
+  @include clearfix();
+  @include inlineblock();
+}
+.sort-view__item {
+  float: left;
+  border-left : 1px solid #dee1e4;
+}
+.sort-view__link {
+  display : block;
+  width : 50px;
+  height: 50px;
+  position: relative;
+  outline: none !important;
+}
+$sorticons : rows, grids, lines;
+$views-map : sprite-map('icon/views/*.png', $spacing : 70px);
+
+@each $item in $sorticons {
+  .sort-view__item-#{$item} {
+    .sort-view__icon{
+      @include get-sprite($views-map, $item);
+      @include absolute-center();
+      &:hover {
+        @include get-sprite($views-map, $item+'-hover');
+        @include absolute-center();
+      }
+    }
+  }
+}

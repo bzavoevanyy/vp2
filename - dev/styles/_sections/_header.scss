@@ -1,0 +1,148 @@
+.header {
+  background-color: #ffffff;
+}
+
+.header-top {
+  border-bottom: 1px solid #ebedef;
+  padding: 23px 0;
+}
+
+.social-menu__item {
+  @include inlineblock(middle);
+  margin-left: 12px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.social-menu__item_text {
+  position: absolute;
+  top:0;
+  left: -9999px;
+}
+
+.social-menu__link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  @include border-radius(50%);
+  background: #333333;
+  position: relative;
+}
+.social__icon {
+  @include absolute-center;
+}
+
+$socials: fb, vk, tw;
+$socials-map: sprite-map('icon/socials/*.png', $spacing:70px);
+
+@each $social in $socials {
+  .social-menu__item_#{$social} {
+    .social__icon {
+      @include get-sprite($socials-map, $social);
+    }
+    .social__icon:hover {
+      @include get-sprite($socials-map, $social + '_hover');
+    }
+  }
+
+}
+.header-top__left {
+  width: 50%;
+  float : left;
+}
+.header-top__right {
+  width: 50%;
+  float : left;
+}
+
+.adress{
+  @include inlineblock(middle);
+  margin-right : 85px;
+  margin-left: 65px;
+  &:before {
+    content : '';
+    @include get-sprite($misc-sprite, pin);
+    @include inlineblock(middle);
+    margin-right: 9px;
+  }
+}
+
+.phone {
+  @include inlineblock(middle);
+  margin-right : 25px;
+  &:before {
+    content : '';
+    @include get-sprite($misc-sprite, phone);
+    @include inlineblock(middle);
+    margin-right: 9px;
+  }
+}
+.adress__link {
+
+  @include open-sans(regular);
+  font-size: 14px;
+  color: $black;
+  text-decoration: none;
+
+}
+.phone__link {
+  @include open-sans(semibold);
+  font-size: 18px;
+  color: $black;
+  text-decoration: none;
+}
+.header-bottom {
+  background-color: #f4f4f4;
+  padding: 30px 0;
+}
+.logo, .search, .header-links {
+  float : left;
+}
+
+.search {
+  margin-left: 55px;
+}
+
+.search__input {
+  width: 290px;
+  @include border-radius(2px);
+  @include box-shadow(none);
+  border: 1px solid #dee1e4;
+  border-right: none;
+  padding: 8px 15px;
+  @include open-sans(light);
+  font-size: 14px;
+  color: #7f7f7f;
+  position: relative;
+  box-sizing : border-box;
+}
+.search__button {
+  @include inlineblock(top);
+  height: 37px;
+  width: 79px;
+  background-color: $orange;
+  border: none;
+  margin-left: -4px;
+  @include border-radius(0 2px 2px 0);
+  @include open-sans(semibold);
+  font-size: 16;
+  color : #fff;
+}
+
+.header-menu__item {
+  @include inlineblock(middle);
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 50px;
+  }
+
+}
+.header-menu__link {
+  color: $black;
+  @include open-sans(semibold);
+  font-size: 16px;
+  &:hover {
+    color:$orange;
+  }
+}

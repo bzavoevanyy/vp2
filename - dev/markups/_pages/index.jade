@@ -1,0 +1,91 @@
+extends ../main
+
+block title
+	| Главная страница (main.psd)
+
+block content
+	article.content-wrapper
+		.container
+			.main-title
+				| Мобильные телефоны
+			include ../_common/_sidebar
+			.maincontent-wrapper
+				.block.helper
+					.sort
+						.sort-left
+							.sort-select__wrap
+								.sort__title
+									| Сортировать по
+								select.sort-select__elem
+									- var $options = ['цене', 'популярности'];
+										each item in $options
+											option(value='')= item
+						.sort-right
+							.sort__title
+								| Вид каталога
+							ul.sort-view
+								- var $items = ['rows', 'grids', 'lines'];
+									each item in $items
+										li(class='sort-view__item sort-view__item-' + item)
+											a(href='#' data-view= item).sort-view__link
+												.sort-view__icon
+
+				.products
+					ul.products__list.products__list-lines
+						- for (i = 1; i < 10; i++)
+							li.products__item
+								.product__item-left
+									.product__slideshow
+										.product__slideshow-block
+											a(href="#").product__slideshow-display
+												img(src='http://lorempixel.com/200/200/technics/5' alt="").product__slideshow-img
+										ul.product__slideshow-thumbs
+											- for (x = 1; x < 4 ; x++)
+												li.product__slideshow-item
+													a(href='#').product__slideshow-link
+														img(src='http://lorempixel.com/45/45/technics/2').product__slideshow-thumb
+										.product-article
+											.product-article__title Артикул:
+											.product-article__number 1221412
+									.product-discription
+										.product-discription__title Sumsung Galaxy S3
+										ul.product-discription__list
+											- var disc = {'Тип SIM-карты':'Micro-SIM','Колличество SIM-карт':'1','Цвет':'Белый','ОС':'Android','Связь 3G':'Есть','4G(LTE)':'Нет','GPS модуль':'Есть'};
+											- var index = 0;
+											- for (item in disc)
+												li(class='product-discription__item' + (!(index++ % 2) ? ' product-discription__item-color' : ''))
+													.product__disc-key= item
+													.product__disc-value= disc[item]
+
+										ul.product__rating
+											li.product__ratin-item.marked
+											li.product__ratin-item.marked
+											li.product__ratin-item.marked
+											li.product__ratin-item.marked
+											li.product__ratin-item
+											li.product__rating-count 4
+								.product__item-right
+									.product__info
+										.product__info-price 11500
+									.product__info-bottom
+										a(href='#').product__info-btn В корзину
+										.product__info-avail В наличии
+				.pagination
+					ul.pagination__list
+						li.pagination__item.pagination__prev
+							a(href='#').pagination__link
+						- for (i=1;i<4;i++)
+							li.pagination__item
+								a(href='#').pagination__link= i
+						li.pagination__item.pagination__next
+							a(href='#').pagination__link
+		.container
+			.attension
+				.attension-title
+					| Важная информация
+				.attension-content
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus, rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus, rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus, rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus, rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus, rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
