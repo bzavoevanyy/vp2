@@ -64,7 +64,7 @@ $socials-map: sprite-map('icon/dark-socials/*.png', $spacing:70px);
 }
 
 .footer-bottom__text {
-  padding: 3px 0;
+
   text-align: center;
   @include open-sans(regular);
   color : #fff;

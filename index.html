@@ -93,90 +93,100 @@
 							</div>
 							<div class="block">
 								<ul class="side-bar">
-									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link">Наличие в магазинах</a>
-										<label class="side-bar__radio">
-											<input type="radio" name="shop" checked="checked" class="side-bar__radio_input">
-											<div class="side-bar__radio_text">Во всех магазинах</div>
-										</label>
-										<label class="side-bar__radio">
-											<input type="radio" name="shop" class="side-bar__radio_input">
-											<div class="side-bar__radio_text">В ближайшем ко мне магазине</div>
-										</label>
-									</li>
-									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link">Бренды</a>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Lenovo" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Lenovo</div>
-										</label>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Sumsung" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Sumsung</div>
-										</label>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Apple" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Apple</div>
-										</label>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Asus" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Asus</div>
-										</label>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Motorola" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Motorola</div>
-										</label><a href="#" class="brends-reset">Сбросить фильтры</a>
-									</li>
-									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link">Цена</a>
-										<div class="sidebar-price">
-											<div class="sidebar-price__wrap">
-												<div class="sidebar-price__item">
-													<div class="sidebar-price__item-text">от</div>
-													<input class="sidebar-price__item-from">
-												</div>
-												<div class="sidebar-price__item">
-													<div class="sidebar-price__item-text">до</div>
-													<input class="sidebar-price__item-to">
-												</div>
-											</div>
-											<div data-min="0" data-max="50000" class="sidebar-price__slider"></div>
+									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link side-bar__link-expand">Наличие в магазинах</a>
+										<div class="side-bar__wrap expanded">
+											<label class="side-bar__radio">
+												<input type="radio" name="shop" checked="checked" class="side-bar__radio_input">
+												<div class="side-bar__radio_text">Во всех магазинах</div>
+											</label>
+											<label class="side-bar__radio">
+												<input type="radio" name="shop" class="side-bar__radio_input">
+												<div class="side-bar__radio_text">В ближайшем ко мне магазине</div>
+											</label>
 										</div>
 									</li>
-									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link">Цвет</a>
-										<ul class="sidebar-color">
-											<li class="sidebar-color__item"><a href="#" style="background-color : #ffffff" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #cccccc" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #000000" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #0a3153" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #ff1800" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #fff343" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #fb914a" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #92c37c" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #40a6ff" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #9870ad" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #dc78ad" class="sidebar-color__link"></a></li>
-											<li class="sidebar-color__item"><a href="#" style="background-color : #7f401d" class="sidebar-color__link"></a></li>
-										</ul>
+									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link side-bar__link-expand">Бренды</a>
+										<div class="side-bar__wrap expanded">
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Lenovo" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Lenovo</div>
+											</label>
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Sumsung" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Sumsung</div>
+											</label>
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Apple" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Apple</div>
+											</label>
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Asus" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Asus</div>
+											</label>
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Motorola" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Motorola</div>
+											</label><a href="#" class="brends-reset">Сбросить фильтры</a>
+										</div>
 									</li>
-									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link">Операционные системы</a>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Android" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Android</div>
-										</label>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="iOS" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">iOS</div>
-										</label>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Windows mobile" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Windows mobile</div>
-										</label>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Symbian" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Symbian</div>
-										</label>
-										<label class="side-bar__checkbox">
-											<input type="checkbox" name="Custom" class="side-bar__checkbox_input">
-											<div class="side-bar__checkbox_text">Custom</div>
-										</label><a href="#" class="brends-reset">Сбросить фильтры</a>
+									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link side-bar__link-expand">Цена</a>
+										<div class="side-bar__wrap expanded">
+											<div class="sidebar-price">
+												<div class="sidebar-price__wrap">
+													<div class="sidebar-price__item">
+														<div class="sidebar-price__item-text">от</div>
+														<input class="sidebar-price__item-from">
+													</div>
+													<div class="sidebar-price__item">
+														<div class="sidebar-price__item-text">до</div>
+														<input class="sidebar-price__item-to">
+													</div>
+												</div>
+												<div data-min="0" data-max="50000" class="sidebar-price__slider"></div>
+											</div>
+										</div>
+									</li>
+									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link side-bar__link-expand">Цвет</a>
+										<div class="side-bar__wrap expanded">
+											<ul class="sidebar-color">
+												<li class="sidebar-color__item"><a href="#" style="background-color : #ffffff" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #cccccc" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #000000" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #0a3153" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #ff1800" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #fff343" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #fb914a" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #92c37c" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #40a6ff" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #9870ad" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #dc78ad" class="sidebar-color__link"></a></li>
+												<li class="sidebar-color__item"><a href="#" style="background-color : #7f401d" class="sidebar-color__link"></a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="small-menu__item side-bar__item"><a href="#" class="small-menu__link side-bar__link side-bar__link-expand">Операционные системы</a>
+										<div class="side-bar__wrap expanded">
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Android" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Android</div>
+											</label>
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="iOS" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">iOS</div>
+											</label>
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Windows mobile" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Windows mobile</div>
+											</label>
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Symbian" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Symbian</div>
+											</label>
+											<label class="side-bar__checkbox">
+												<input type="checkbox" name="Custom" class="side-bar__checkbox_input">
+												<div class="side-bar__checkbox_text">Custom</div>
+											</label><a href="#" class="brends-reset">Сбросить фильтры</a>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -207,15 +217,15 @@
 								</div>
 							</div>
 							<div class="products">
-								<ul class="products__list products__list-lines">
+								<ul class="products__list products__list-rows">
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -276,11 +286,11 @@
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -341,11 +351,11 @@
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -406,11 +416,11 @@
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -471,11 +481,11 @@
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -536,11 +546,11 @@
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -601,11 +611,11 @@
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -666,11 +676,11 @@
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -731,11 +741,11 @@
 									<li class="products__item">
 										<div class="product__item-left">
 											<div class="product__slideshow">
-												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/5" alt="" class="product__slideshow-img"></a></div>
+												<div class="product__slideshow-block"><a href="#" class="product__slideshow-display"><img src="http://lorempixel.com/200/200/technics/7" alt="" class="product__slideshow-img"></a></div>
 												<ul class="product__slideshow-thumbs">
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
-													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
+													<li class="product__slideshow-item"><a href="#" class="product__slideshow-link"><img src="http://lorempixel.com/45/45/technics/2" data-big="http://lorempixel.com/200/200/technics/2" class="product__slideshow-thumb"></a></li>
 												</ul>
 												<div class="product-article">
 													<div class="product-article__title">Артикул:</div>
@@ -821,6 +831,7 @@
 				</article>
 			</div>
 		</div>
+		<div class="empty"></div>
 		<footer class="footer">
 			<div class="footer-top">
 				<div class="container">

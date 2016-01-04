@@ -31,19 +31,19 @@ block content
 												.sort-view__icon
 
 				.products
-					ul.products__list.products__list-lines
+					ul.products__list.products__list-rows
 						- for (i = 1; i < 10; i++)
 							li.products__item
 								.product__item-left
 									.product__slideshow
 										.product__slideshow-block
 											a(href="#").product__slideshow-display
-												img(src='http://lorempixel.com/200/200/technics/5' alt="").product__slideshow-img
+												img(src='http://lorempixel.com/200/200/technics/7' alt="").product__slideshow-img
 										ul.product__slideshow-thumbs
 											- for (x = 1; x < 4 ; x++)
 												li.product__slideshow-item
 													a(href='#').product__slideshow-link
-														img(src='http://lorempixel.com/45/45/technics/2').product__slideshow-thumb
+														img(src='http://lorempixel.com/45/45/technics/2' data-big='http://lorempixel.com/200/200/technics/2').product__slideshow-thumb
 										.product-article
 											.product-article__title Артикул:
 											.product-article__number 1221412

@@ -63,6 +63,72 @@ var changeView = (function() {
         init : init
     }
 }());
+var akkordeon = (function() {
+
+    var init = function() {
+
+        $('.side-bar__link').on('click', function(e) {
+            e.preventDefault();
+            var current = $(this).siblings('.side-bar__wrap').eq(0);
+            if (current.hasClass('expanded')) {
+                current.stop();
+                current.slideUp();
+                $(this).removeClass('side-bar__link-expand');
+                current.removeClass('expanded');
+            } else {
+                current.stop();
+                current.slideDown();
+                $(this).addClass('side-bar__link-expand');
+                current.addClass('expanded');
+            }
+        })
+
+    }
+    return {
+        init : init
+    }
+}());
+
+var resetCheckbox = (function() {
+
+    var init = function() {
+
+        $('.brends-reset').on('click', function(e) {
+            e.preventDefault();
+            var
+                par = $(this).closest('.side-bar__wrap');
+                checkboxs = par.find('input:checkbox');
+            checkboxs.each(function() {
+                $(this).removeProp('checked');
+            })
+        })
+    };
+
+    return {
+        init : init
+    }
+}());
+
+var slideShow = (function() {
+
+    var init = function() {
+
+        $('.product__slideshow-link').on('click', function(e) {
+            e.preventDefault();
+            $this = $(this);
+            path = $this.find('img').data('big');
+            bigblock = $this.closest('.product__slideshow-thumbs').siblings('.product__slideshow-block');
+            bigimg = bigblock.find('.product__slideshow-img');
+            bigimg.attr('src', path);
+
+        })
+    };
+
+    return {
+        init : init
+    }
+}());
+
 
 $(document).ready(function(){
 
@@ -71,4 +137,10 @@ $(document).ready(function(){
         minimumResultsForSearch: Infinity
     });
     changeView.init();
+    akkordeon.init();
+    $('.attension-content').columnize({
+        columns : 2
+    });
+    resetCheckbox.init();
+    slideShow.init();
 });

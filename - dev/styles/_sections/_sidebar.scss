@@ -39,6 +39,7 @@
 .side-bar__link {
   @include open-sans(semibold);
   font-size: 14px;
+  outline: none !important;
   &:hover {
     &:after {
       content: '';
@@ -53,6 +54,15 @@
     }
   }
 }
+.side-bar__link-expand {
+  &:hover {
+    background-color: inherit;
+    &:after {
+      @include get-sprite($misc-sprite, up);
+    }
+  }
+}
+
 .side-bar__radio_input {
   position : absolute;
   left : -9999px;
