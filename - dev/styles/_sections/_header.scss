@@ -28,6 +28,7 @@
   @include border-radius(50%);
   background: #333333;
   position: relative;
+
 }
 .social__icon {
   @include absolute-center;
@@ -41,8 +42,8 @@ $socials-map: sprite-map('icon/socials/*.png', $spacing:70px);
     .social__icon {
       @include get-sprite($socials-map, $social);
     }
-    .social__icon:hover {
-      @include get-sprite($socials-map, $social + '_hover');
+    &:hover .social__icon {
+        @include get-sprite($socials-map, $social + '_hover');
     }
   }
 
@@ -98,6 +99,10 @@ $socials-map: sprite-map('icon/socials/*.png', $spacing:70px);
 }
 .logo, .search, .header-links {
   float : left;
+}
+.logo__link {
+  text-decoration: none;
+  display: block;
 }
 
 .search {

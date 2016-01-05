@@ -1,20 +1,23 @@
 @mixin open-sans($style : regular) {
 
-  font-family: 'Open Sans';
 
   @if ($style == light) {
-    font-weight: 100;
+    font-family: 'Open Sans lite';
   }
 
   @if ($style == regular) {
-    font-weight: 400;
+    font-family: 'Open Sans Regular';
   }
 
   @if ($style == semibold) {
-    font-weight: 600;
+    font-family: 'Open Sans Semibold';
   }
 
   @if ($style == bold) {
-    font-weight: 700;
+    font-family: 'Open Sans Bold';
   }
 }
+
+
+
+

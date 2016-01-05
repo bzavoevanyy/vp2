@@ -47,9 +47,13 @@ $views-map : sprite-map('icon/views/*.png', $spacing : 70px);
       @include get-sprite($views-map, $item);
       @include absolute-center();
       &:hover {
-        @include get-sprite($views-map, $item+'-hover');
+        @include get-sprite($views-map, $item+'-hover', no-repeat, true, true, 0, +1px);
         @include absolute-center();
       }
+    }
+    .active {
+      @include get-sprite($views-map, $item+'-hover', no-repeat, true, true, 0, +1px);
+      @include absolute-center();
     }
   }
 }

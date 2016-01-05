@@ -41,20 +41,28 @@ var changeView = (function() {
 
     var init = function() {
 
+        $('.sort-view__icon').first().addClass('active');
+
         $('.sort-view__link').on('click', function(e){
             e.preventDefault();
 
             if ($(this).data('view') == 'grids') {
                 $('.products__list').removeClass('products__list-lines');
                 $('.products__list').addClass('products__list-grids');
+                $('.sort-view__icon.active').removeClass('active');
+                $(this).find('.sort-view__icon').addClass('active');
             }
             if ($(this).data('view') == 'rows') {
                 $('.products__list').removeClass('products__list-lines');
                 $('.products__list').removeClass('products__list-grids');
+                $('.sort-view__icon.active').removeClass('active');
+                $(this).find('.sort-view__icon').addClass('active');
             }
             if ($(this).data('view') == 'lines') {
                 $('.products__list').addClass('products__list-lines');
                 $('.products__list').removeClass('products__list-grids');
+                $('.sort-view__icon.active').removeClass('active');
+                $(this).find('.sort-view__icon').addClass('active');
             }
         })
 

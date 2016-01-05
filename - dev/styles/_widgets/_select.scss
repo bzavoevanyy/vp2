@@ -2,6 +2,8 @@
   width: 160px !important;
   * {
     outline: none !important;
+    @include open-sans(light);
+    font-size: 14px;
   }
   .select2-selection__arrow {
     b {
@@ -14,18 +16,35 @@
       left: 0 !important;
       bottom: 0 !important;
       right: 0 !important;
+      margin-right: 7px !important;
+
     }
   }
-  .select2-container--open {
-    .select2-selection__arrow {
-      b {
-        @include get-sprite($misc-sprite, smallup)
-      }
-    }
-  }
+
   .select2-selection__rendered {
     font-size: 12px;
     @include open-sans(light);
     color : #7f7f7f;
   }
+}
+.select2-container--open {
+  .select2-selection__arrow {
+    b {
+      @include get-sprite($misc-sprite, smallup);
+    }
+  }
+  .select2-dropdown--below {
+    margin-top: 4px;
+    @include box-shadow(0 0 4px 0 rgba(134,134,134,0.7));
+  }
+}
+.select2-container--default {
+  .select2-results__option--highlighted {
+    background-color: inherit !important;
+    color: #000 !important;
+  }
+}
+.select2-results__option {
+  color : #444 !important;
+  background-color: inherit !important;
 }

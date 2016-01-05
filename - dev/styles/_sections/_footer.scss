@@ -42,7 +42,7 @@ $socials-map: sprite-map('icon/dark-socials/*.png', $spacing:70px);
     .social-icon {
       @include get-sprite($socials-map, $social);
     }
-      .social-icon:hover {
+      &:hover .social-icon {
         @include get-sprite($socials-map, $social + '_hover');
       }
     }
@@ -57,6 +57,7 @@ $socials-map: sprite-map('icon/dark-socials/*.png', $spacing:70px);
   text-decoration: underline;
   &:hover {
     background-color: inherit;
+    text-decoration: none;
   }
 }
 .footer-top {

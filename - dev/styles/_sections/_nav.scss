@@ -20,6 +20,7 @@
   box-sizing: border-box;
 }
 .main-menu__link {
+  outline: none !important;
   line-height: 18px;
   @include inlineblock(middle);
   padding: 18px 16px;

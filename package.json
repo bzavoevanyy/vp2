@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "template for good works",
   "main": "gulpfile.js",
-  "repository" : "https://github.com/wowua/loftschool-template",
+  "repository": "https://github.com/wowua/loftschool-template",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-real-favicon": "^0.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.4.1",
     "gulp-util": "^3.0.6"

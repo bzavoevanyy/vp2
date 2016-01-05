@@ -4,6 +4,8 @@
 
 @import "_misc/normalize";
 
+@import "_misc/_fontsinstall";
+
 @import "_misc/_fonts";
 
 /* --------- mixins --------- */
@@ -22,5 +24,6 @@ $blue : #d9e5ea;
 @import "_plugins/**/*";
 @import "_sections/**/*";
 @import "_widgets/**/*";
+@import "_views/**/*";
 
 
