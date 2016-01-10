@@ -51,18 +51,21 @@ var changeView = (function() {
                 $('.products__list').addClass('products__list-grids');
                 $('.sort-view__icon.active').removeClass('active');
                 $(this).find('.sort-view__icon').addClass('active');
+                $('.pagination').css('margin-top','45px');
             }
             if ($(this).data('view') == 'rows') {
                 $('.products__list').removeClass('products__list-lines');
                 $('.products__list').removeClass('products__list-grids');
                 $('.sort-view__icon.active').removeClass('active');
                 $(this).find('.sort-view__icon').addClass('active');
+                $('.pagination').css('margin-top','65px');
             }
             if ($(this).data('view') == 'lines') {
                 $('.products__list').addClass('products__list-lines');
                 $('.products__list').removeClass('products__list-grids');
                 $('.sort-view__icon.active').removeClass('active');
                 $(this).find('.sort-view__icon').addClass('active');
+                $('.pagination').css('margin-top','65px');
             }
         })
 
