@@ -85,6 +85,11 @@
       @include border-radius(50%);
       border: 3px solid #dee1e4;
   }
+  &:hover {
+    &:before {
+      cursor: pointer;
+    }
+  }
 }
 .side-bar__radio_text:after {
   content: "";
@@ -137,14 +142,14 @@
       width: 19px;
       height: 19px;
       background-color: #dee1e4;
-
+      cursor:pointer;
     }
   }
 };
 .side-bar__checkbox_input:checked + .side-bar__checkbox_text:before {
   background-color: $orange;
 }
-.side-bar__checkbox_input:checked + .side-bar__checkbox_text:hover:before {
+.side-bar__checkbox_input:checked + .side-bar__checkbox_text:before {
   display: block;
   @include get-sprite($misc-sprite, ok_hover, no-repeat, true, true, 3px, +5px);
   width: 19px;
